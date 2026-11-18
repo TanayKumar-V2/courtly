@@ -1,0 +1,16 @@
+node_modules
+.pnpm-store
+.git
+.gitignore
+.turbo
+dist
+coverage
+.expo
+apps/mobile
+packages/shared/node_modules
+apps/api/node_modules
+apps/api/dist
+README.md
+*.md
+.env
+.env.local

@@ -1,0 +1,24 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "extensionsToTreatAsEsm": [".ts"],
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        "useESM": true,
+        "tsconfig": {
+          "module": "ESNext",
+          "target": "ES2022",
+          "moduleResolution": "node"
+        }
+      }
+    ]
+  },
+  "moduleNameMapper": {
+    "^@courtly/shared$": "<rootDir>/../../../packages/shared/src/index.ts",
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  }
+}

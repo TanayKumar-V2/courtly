@@ -1,0 +1,25 @@
+{
+  "name": "courtly-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Courtly - Premium Android-First Sports Booking & Matchmaking Platform",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:mobile": "pnpm --filter @courtly/mobile dev",
+    "dev:api": "pnpm --filter @courtly/api dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

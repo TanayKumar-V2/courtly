@@ -1,0 +1,59 @@
+# Node modules & pnpm
+node_modules/
+.pnpm-store/
+
+# Turbo
+.turbo/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Expo & React Native
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android native build outputs (when CNG is prebuilt)
+apps/mobile/android/
+apps/mobile/.gradle/
+apps/mobile/build/
+*.keystore
+
+# iOS native build outputs
+apps/mobile/ios/
+*.ipa
+*.apk
+*.aab
+
+# NestJS build output
+apps/api/dist/
+
+# Tests & Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
